@@ -33,7 +33,7 @@ I like to learn something new and want to improve my IT skills
 
   Faculty of Mathematics
 
- [Учебный проект](https://github.com/ayzana/project.git)
+    [Учебный проект](https://github.com/ayzana/project.git)
 
 ## Languages
 
