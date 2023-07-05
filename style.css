@@ -1,3 +1,9 @@
+/*
+#64beb1;
+ #0E0E0F;
+
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -5,16 +11,29 @@ html {
   scroll-behavior: smooth; 
 }
 body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+ 
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+.header {
+  background-color: #e2eef3; 
 }
 .nav-list {
   display: flex;
@@ -24,4 +43,94 @@ body {
 }
 .nav-link {
   transition: .3s;
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #abb8c3;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+.section {
+  width: 50%;
+
+}
+.main-title {
+  position: relative;
+  font-size: 44px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  
+}
+.subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: #ed914a;
+  color: #fff ;
+}
+
+.section-item::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px; 
+  border: 1px solid #829985;
+  border-radius: 50%;
+}
+.section-profile {
+  display: flex; 
+  width: 100%;
+ 
+}
+.profile-img {
+  width: 15%;
+  border-radius: 6%;
+  filter: grayscale(0.1);
+  margin-right: 35%;
+}
+.profile-info {
+ 
+}
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.contacts-item:nth-child(1) {
+  background: url(./assets/envelope.svg) no-repeat left;
+}
+.contacts-item:nth-child(2) {
+  background: url(./assets/github-logo.svg) no-repeat left;
+}
+.contacts-item:nth-child(3) {
+  background: url(./assets/telegram-logo.svg) no-repeat left;
+}
+.contacts-item:nth-child(4) {
+  background: url(./assets/discord-logo.svg) no-repeat left;
+}
+
+.contacts-text {
+  margin-left: 40px;
+}
+
+.footer {
+  background-color:  #0E0E0F;;
+}
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
 }
