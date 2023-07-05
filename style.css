@@ -12,7 +12,7 @@ html {
 }
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
@@ -40,8 +40,9 @@ ul {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  padding: 20px;
 }
-a {
+.nav-link, .link {
   transition: .3s;
   padding: 0 20px;
   line-height: 50px;
@@ -50,7 +51,7 @@ a {
   transition: color 0.5s;
 }
 
-a:hover {
+.nav-link:hover, .link:hover {
   color: #abb8c3;
 }
 .main {
@@ -81,7 +82,7 @@ a:hover {
 .main-title {
   position: relative;
   font-size: 44px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 5px;
   
 }
@@ -100,7 +101,7 @@ a:hover {
 
 
 .section-title {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -130,7 +131,30 @@ a:hover {
 }
 
 .footer {
-  background-color:  #0E0E0F;;
+  background-color:  #0E0E0F;
+  color: #fff;
+  
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.github-link {
+  color: #fff;
+  text-decoration: none;
+}
+.github-link:hover{
+ color: #aaa7a7;
+  transition: 0.5s;
+}
+.rsshool {
+  display: block;
+    width: 100px;
+    height: 50px;
+  background: url(./assets/rss.svg) no-repeat;
+  background-size: contain;
 }
 @media (max-width: 768px) {
   .section {
