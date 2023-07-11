@@ -8,10 +8,10 @@
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
@@ -21,7 +21,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
 }
 ul {
   list-style: none;
@@ -33,7 +32,7 @@ ul {
   margin: 0 auto;
 }
 .header {
-  background-color: #e2eef3; 
+  background-color: #e2eef3;
 }
 .nav-list {
   display: flex;
@@ -42,8 +41,9 @@ ul {
   list-style: none;
   padding: 20px;
 }
-.nav-link, .link {
-  transition: .3s;
+.nav-link,
+.link {
+  transition: 0.3s;
   padding: 0 20px;
   line-height: 50px;
   text-decoration: none;
@@ -51,7 +51,8 @@ ul {
   transition: color 0.5s;
 }
 
-.nav-link:hover, .link:hover {
+.nav-link:hover,
+.link:hover {
   color: #abb8c3;
 }
 .main {
@@ -61,23 +62,24 @@ ul {
 .main-container {
   display: flex;
   flex-wrap: wrap;
- }
+}
 
 .section {
   width: 50%;
   padding-bottom: 40px;
 }
 .section-profile {
-  display: flex; 
+  display: flex;
   width: 100%;
   padding-bottom: 40px;
 }
 .profile-img {
-  width: 15%;
-  border-radius: 6%;
+  object-fit: cover;
+  width: 200px;
+  border-radius: 10px;
   filter: grayscale(0.1);
   margin-right: 35%;
-  box-shadow: 0px 5px 10px 0px rgba(48, 47, 47, 0.5)
+  box-shadow: 0px 5px 10px 0px rgba(48, 47, 47, 0.5);
 }
 
 .main-title {
@@ -85,7 +87,6 @@ ul {
   font-size: 44px;
   font-weight: 400;
   letter-spacing: 5px;
-  
 }
 .subtitle {
   background-color: #ed914a;
@@ -95,11 +96,10 @@ ul {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 3px;
-  text-transform: uppercase;  
-  color: #fff ;
+  text-transform: uppercase;
+  color: #fff;
   text-align: center;
 }
-
 
 .section-title {
   font-size: 28px;
@@ -132,9 +132,8 @@ ul {
 }
 
 .footer {
-  background-color:  #0E0E0F;
+  background-color: #0e0e0f;
   color: #fff;
-  
 }
 .footer-container {
   display: flex;
@@ -146,14 +145,14 @@ ul {
   color: #fff;
   text-decoration: none;
 }
-.github-link:hover{
- color: #aaa7a7;
+.github-link:hover {
+  color: #aaa7a7;
   transition: 0.5s;
 }
 .rsshool {
   display: block;
-    width: 100px;
-    height: 50px;
+  width: 100px;
+  height: 50px;
   background: url(./assets/rss.svg) no-repeat;
   background-size: contain;
 }
